@@ -29,7 +29,7 @@ button {
   margin: 0;
 }
 input[type='text'] {
-  width: 35vw;
+  width: 40vw;
 }
 .search-btn {
   cursor: pointer;
@@ -47,15 +47,13 @@ input[type='text'] {
 .meals {
   display: grid;
   max-width: 60vw;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 10vw));
   gap: 20px;
   margin-top: 20px;
 }
 .meal {
   cursor: pointer;
   position: relative;
-  height: 180px;
-  width: 180px;
   text-align: center;
 }
 .meal img {
@@ -80,10 +78,57 @@ input[type='text'] {
 .meal:hover .meal-info {
   opacity: 1;
 }
-
-@media (max-width: 800px) {
+.single-meal {
+  margin: 50px auto;
 }
-@media (max-width: 700px) {
+.single-meal img {
+  width: max(30vw, 300px);
+  margin: 15px;
+  border: 4px #fff solid;
+  border-radius: 2px;
 }
-@media (max-width: 500px) {
+.single-meal h1,
+.single-meal-info,
+.main h2 {
+  border: 2px #e09850 dashed;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 20px;
+}
+.single-meal-info {
+  padding: 5px;
+}
+.single-meal-info p {
+  padding: 5px;
+  font-weight: bold;
+}
+.single-meal-info p:first-child {
+  border-bottom: 1px #e09850 solid;
+}
+.single-meal p {
+  margin: 0;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+}
+.single-meal ul {
+  padding-left: 0;
+  list-style: none;
+}
+.single-meal ul li {
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  background-color: #fff;
+  display: inline-block;
+  color: #2d2013;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0 5px 5px 0;
+}
+.main p,
+.main ul {
+  border: 2px #195519 dashed;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 20px;
 }
